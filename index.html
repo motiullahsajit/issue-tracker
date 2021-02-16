@@ -7,10 +7,13 @@
     <title>Issue Tracker: </title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body onload="fetchIssues()">
     <div class="container">
-      <h1>Issue Tracker: </h1>
+      <h1>Issue Tracker:<span id="number-of-issues"></span> </h1>
+      <h4 >Not solved issues: <span id="not-solved"></span></h4>
+      <h4 >Closed issues: <span id="closed"></span></h4>
       <div class="jumbotron">
         <h3>Add New Issue:</h3>
         <form id="issueInputForm">
