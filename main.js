@@ -42,7 +42,7 @@ const fetchIssues = () => {
   const issuesList = document.getElementById('issuesList');
   issuesList.innerHTML = '';
   for (let i = 0; i < issues.length; i++) {
-    const { id, description, severity, assignedTo, status} = issues[i];
+    const { id, description, severity, assignedTo, status } = issues[i];
 
     issuesList.innerHTML += `<div class="well">
                               <h6>Issue ID: ${id} </h6>
@@ -69,7 +69,8 @@ const numberOfIssue = () => {
       const element = issueStatus[i].innerText;
       if (element == "Open") {
         notSolved = notSolved + 1;
-      } else if (element == "Closed") {
+      }
+      else (element == "Closed") {
         closed = closed + 1;
       }
     }
